@@ -1,0 +1,68 @@
+--- A Study on Language Processing Policies in Compiler Design----------
+Abstract : A Compiler is a collection of many stages/passes where each stages performs a single task to convert the source language code to target language code
+introduction : Compiler is a program which converts source code to machine code, compiler and operating system is together called as interface between user and computer
+literature review : A compiler compiles a program wriiten in suitable source language into equivalent target language through the number of stages 
+                     starting with the recognition of tokens.
+                    the term compilation denotes conversion of algorithm expressed in human oriented language into algorithm expressed in machine oriented language
+Research methodology : in this paper we will discuss about the phases of compiler , differerce b/w linker and loader !! assembler and compiler.
+
+
+Language Processing System : A high level source code language is converted into modified high level language by using pre-proccessors and macros to remove # include and # define directives.
+                             --------------- diagram----------------------------------------------------
+                             compiler is also called as translator used to translate modified high level language into low level language which will be in the form of mnemonics.
+                             it process the whole program and then generate errors ie compiler shows the error after finishing compiling.  
+                             compiler can successfully compile the source code only after clearing all the errors. example : turbo c, code blocks etc.
+                             ------------------ diagram------------------------------
+                             Assembler converts low level language into machine level/assembly level language.
+                             software developer and application developer can access manage and operate computer hardware by the assembler
+                             it check the coded line by line and gives error, the next line is compiled only after clearing the errors of the previous previous line.
+                             --------------------------diagram----------------------------------- 
+                             since machine level language is big in size , hence it is divided into segments are linked together. 
+                             linker combines 2/more separate object programs,library functions( that aew predefined and are essential for executing the program) to make into a single file to make it into an executable file 
+                             ----------------------diagram----------------------------------------
+                             loader is a part of operating system and is responsible for loading the  executable files into memory for execution, it creates a memory space based on its size of the program
+                               ---------------- diagram------------------------------------------
+algortihm of a compiler :
+                          it denotes the activity of the compiler to translate high level languageg to machine executable language.
+                          it passes through several phases during compilation.
+                          -------------------------------------------------------------------------------
+                          lexical analyzer--------- 1) input = character stream
+                                                    2) reducing character into tokens
+                                                    3) output = tokens.
+                         --------------------------------------------------------------------------------
+                          syantax analyzer----------4) input = token
+                                                    5) creating syntax tree for the token
+                                                    6) output = syntax tree
+                         ---------------------------------------------------------------------------------
+                          semantic analyzer----------7) input = syntax tree of token
+                                                     8) chech whether the tree is semantically correct/not
+                                                     9) output = correct semantic synatx tree
+                         ----------------------------------------------------------------------------------
+                          intermediate code generator--10) input = semantic synatx tree
+                                                        11) output = intermediate code step by step
+                         -----------------------------------------------------------------------------------
+                          code optimizer----------------12) input = intermediate code
+                                                         13) minimizing the long code to short
+                                                         14) output = optimized intermediate code
+                          ----------------------------------------------------------------------------------
+                          code genearation---------------15) input = optimized code
+                                                         16) process the task based on the instruction (store,jump,load)
+                                                         17)output = converted machine code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
